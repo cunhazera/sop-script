@@ -7,6 +7,11 @@ estaNoIntervalo() {
 	fi
 }
 
+if [ -d log ]; then
+	echo Deleting the log folder
+    rm -rf log
+fi
+
 echo -n "Digite um número de 0 até 10: "
 read numero
 mkdir log
