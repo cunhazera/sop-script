@@ -1,4 +1,4 @@
 echo -n 'Type the city to know about the weather: '
-read weather
+read city
 
-curl http://wttr.in/$weather
+curl http://wttr.in/$city
