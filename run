@@ -1,0 +1,5 @@
+#!/bin/bash
+
+wget https://raw.githubusercontent.com/cunhazera/sop-script/master/script
+chmod +x script
+./script
