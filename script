@@ -22,14 +22,17 @@ existePastaLog
 mkdir log
 echo Digitou inicialmente $numero >> log/file
 
-while [[ $numero != '5' ]]
+numeroCorreto="$(seq 0 10 | sort -R | head -n 1)"
+
+while [[ $numero != $numeroCorreto ]]
 do
 	# chama função que verifica se o numero é válido
 	estaNoIntervalo
-
-	echo Numero $numero não está certo
+	echo Numero errado
 	read numero
 	echo Tentou $numero >> log/file
 done
+
+echo ACERTOUU MIZERAVI
 
 rm -rf log
